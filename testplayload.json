@@ -1,0 +1,51 @@
+{
+        "schemaId": "azureMonitorCommonAlertSchema",
+        "data": {
+            "essentials": {
+                "alertId": "/subscriptions/09277bbe-69f1-4e20-87e2-1bcf288e3aa0/providers/Microsoft.AlertsManagement/alerts/4d2509d1-3349-47f3-89bb-e81cfe95f81e",
+                "alertRule": "alert-ptroh-webapp-stop",
+                "severity": "Sev4",
+                "signalType": "Activity Log",
+                "monitorCondition": "Fired",
+                "monitoringService": "Activity Log - Administrative",
+                "alertTargetIDs": [
+                    "/subscriptions/09277bbe-69f1-4e20-87e2-1bcf288e3aa0/resourcegroups/ptrohaz104-01-rg/providers/microsoft.web/sites/ptrohaz104-01web-ap"
+                ],
+                "configurationItems": [
+                    "ptrohaz104-01web-ap"
+                ],
+                "originAlertId": "dfc5bd12-3bbf-4579-a720-0d26eccaf463_1914330c7a0e9c1479f887255c207489",
+                "firedDateTime": "2021-04-15T10:28:39.7778898Z",
+                "description": "",
+                "essentialsVersion": "1.0",
+                "alertContextVersion": "1.0"
+            },
+            "alertContext": {
+                "authorization": {
+                    "action": "Microsoft.Web/sites/stop/action",
+                    "scope": "/subscriptions/09277bbe-69f1-4e20-87e2-1bcf288e3aa0/resourceGroups/ptrohaz104-01-rg/providers/Microsoft.Web/sites/ptrohaz104-01web-ap"
+                },
+                "channels": "Operation",
+                "claims": "{\"aud\":\"https://management.core.windows.net/\",\"iss\":\"https://sts.windows.net/16518b96-58d8-41fc-8410-8bc114322a52/\",\"iat\":\"1618479454\",\"nbf\":\"1618479454\",\"exp\":\"1618483354\",\"http://schemas.microsoft.com/claims/authnclassreference\":\"1\",\"aio\":\"AVQAq/8TAAAAP9gkfNrgoBk5yRH/zK70JCCmU/EGeQUNs9PO+PH0Fmgb/HbMiUq7L0vb1VlE8sNEWbfQDRF/CAUfq8u3ZHuoI/cyaRi+HQJ/BWZ7l6jTMMo=\",\"http://schemas.microsoft.com/claims/authnmethodsreferences\":\"pwd,mfa\",\"appid\":\"c44b4083-3bb0-49c1-b47d-974e53cbdf3c\",\"appidacr\":\"2\",\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname\":\"Ochando\",\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname\":\"Ruben\",\"groups\":\"0631bc41-02b0-4438-bfc9-d126cb633845,a9c33c55-e3fc-4851-b63e-ef6c9dd8e07d,d719d6da-b01d-46e6-b0f8-1bf8394713b3,3b15a76a-4975-4a26-af3e-a04c336cd1c6,0f68baa0-ce74-4395-8a65-5b322950af23,0a8edc81-1a40-4072-9b23-ca03c289c946,c225c0af-e83f-431b-be49-63a50de9eb0a,288241f3-6c98-447c-af0f-68ff326c27a5,e17f22ca-7a66-4192-88cd-eaa8344db1a6,3adc8c4b-5931-44f4-871e-e36f7dcb60ef,2334dca0-d9db-4747-84d3-eb41f710c170,4dabbb25-390b-4dda-b89d-710816ebf913,593c5435-5312-43d7-bbd9-04d3b81d5d15\",\"ipaddr\":\"81.166.39.20\",\"name\":\"Ruben Ochando\",\"http://schemas.microsoft.com/identity/claims/objectidentifier\":\"5844ff66-7e27-4180-b2d2-94e21c2718b7\",\"puid\":\"1003200040B08952\",\"rh\":\"0.AYIAlotRFthY_EGEEIvBFDIqUoNAS8SwO8FJtH2XTlPL3zyCANw.\",\"http://schemas.microsoft.com/identity/claims/scope\":\"user_impersonation\",\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier\":\"rv5BZgjR0lgtLVDcFXIxd-PLD8lZSf7jz2ckGuhyEOE\",\"http://schemas.microsoft.com/identity/claims/tenantid\":\"16518b96-58d8-41fc-8410-8bc114322a52\",\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name\":\"ro@ptaken.no\",\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn\":\"ro@ptaken.no\",\"uti\":\"oGkx3jlAvUaXVxlX1VGEAA\",\"ver\":\"1.0\",\"wids\":\"69091246-20e8-4a56-aa4d-066075b2a7a8,e3973bdf-4987-49ae-837a-ba8e231c7286,fe930be7-5e62-47db-91af-98c3a49a38b1,29232cdf-9323-42fd-ade2-1d097af3e4de,9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3,62e90394-69f5-4237-9190-012177145e10,17315797-102d-40b4-93e0-432062caca18,f28a1f50-f6e7-4571-818b-6a12f2af6b6c\",\"xms_tcdt\":\"1385669996\"}",
+                "caller": "ro@ptaken.no",
+                "correlationId": "8b5bb043-7dcd-4b00-891a-f58a28f63662",
+                "eventSource": "Administrative",
+                "eventTimestamp": "2021-04-15T10:05:13.0617888+00:00",
+                "httpRequest": "{\"clientRequestId\":\"34833919-1f95-4528-8cdd-a84828edf018\",\"clientIpAddress\":\"81.166.39.20\",\"method\":\"POST\"}",
+                "eventDataId": "dfc5bd12-3bbf-4579-a720-0d26eccaf463",
+                "level": "Informational",
+                "operationName": "Microsoft.Web/sites/stop/action",
+                "operationId": "24cb7d59-1a85-438f-8156-edaa3f6b9d32",
+                "properties": {
+                    "eventCategory": "Administrative",
+                    "entity": "/subscriptions/09277bbe-69f1-4e20-87e2-1bcf288e3aa0/resourceGroups/ptrohaz104-01-rg/providers/Microsoft.Web/sites/ptrohaz104-01web-ap",
+                    "message": "Microsoft.Web/sites/stop/action",
+                    "hierarchy": "16518b96-58d8-41fc-8410-8bc114322a52/09277bbe-69f1-4e20-87e2-1bcf288e3aa0"
+                },
+                "status": "Started",
+                "subStatus": "",
+                "submissionTimestamp": "2021-04-15T10:20:35.4125612+00:00",
+                "Activity Log Event Description": ""
+            }
+        }
+    }
